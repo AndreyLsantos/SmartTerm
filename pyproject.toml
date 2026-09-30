@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartterm"
+version = "0.3.0"
+description = "AI-assisted terminal for PowerShell, Bash, and Windows CMD."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "SmartTerm contributors" }
+]
+keywords = ["terminal", "cli", "ai", "autocomplete", "llama.cpp", "ollama"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development",
+  "Topic :: System :: Shells",
+  "Topic :: Terminals",
+]
+dependencies = [
+  "prompt_toolkit>=3.0.50,<4",
+  "httpx>=0.28,<1",
+]
+
+[project.urls]
+Homepage = "https://github.com/AndreyLsantos/SmartTerm"
+Issues = "https://github.com/AndreyLsantos/SmartTerm/issues"
+
+[project.scripts]
+smartterm = "smartterm:main"
+
+[tool.setuptools]
+py-modules = ["smartterm"]

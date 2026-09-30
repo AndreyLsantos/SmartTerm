@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Local SmartTerm state and generated files
+.smartterm/
+smartterm.sqlite3
+llama-server.log
+cli-help.txt
+test-results.txt
+
+# Local AI models and bundled runtime binaries
+*.gguf
+models/
+llama/
+
+# Secrets and machine-local config
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+# Editors and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
